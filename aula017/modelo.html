@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+       <h1>Vamos contar</h1>
+    </header>
+    <section>
+        <div id="dados">
+            <p>
+                <label for="iinicio">início:</label> 
+                <input type="number" name="inicio" id="iinicio">
+            </p>
+            <p>
+                <label for="ifim">fim:</label>
+                <input type="number" name="fim" id="ifim">
+            </p>
+            <p>
+                <label for="ipasso">passo:</label>
+                <input type="number" name="passo" id="ipasso">
+            </p>
+            <p>
+                <input type="button" value="contar" onclick="contar()">
+            </p>
+        </div>
+        <div id="res">
+           Preencha os dados a cima para ver o reultado!
+        </div>
+    </section>
+    <footer>
+        <p>&copy; cursoemvideo</p>
+    </footer>
+    <script src="cript.js"></script>
+</body>
+</html>
