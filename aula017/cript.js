@@ -3,6 +3,7 @@ function contar() {
    var fim = window.document.getElementById('ifim')
    var pas = window.document.getElementById('ipasso')
    var res = window.document.getElementById('res')
+
    if (ini.value.length == 0 || fim.value.length == 0 || pas.value.length == 0) { 
       window.alert('[ERRO] Faltam dados!' )
    } else {
@@ -10,6 +11,9 @@ function contar() {
       var i = Number(ini.value)
       var f = Number(fim.value)
       var p = Number(pas.value)
-   }
-   
+  
+      for(var c = i;  c <= f; c += p) {
+         res.innerHTML += `${c}`
+      } 
+   } 
 }
